@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rules</title>
+
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        height: 100vh;
+        color: #333;
+        background-color: #9f49b0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 50px 0px 50px;
+      }
+
+      .bth {
+        background-color: #e4e4e4;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        position: relative;
+        left: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="text-align: justify">
+        Two users can play this game on same device, one person being player 1
+        and the other one player 2. Player 1 will start the game by rolling
+        dice. He/she can store the score by holding. Nevertheless, holding means
+        changing turns. This unbiased dice if shows 1, that would also change
+        the turns. The goal is to reach the score of 100 as fast as possible.
+      </h2>
+
+      <a href="{% url 'rd-page' %}"> <button class="bth">Back</button></a>
+    </div>
+  </body>
+</html>

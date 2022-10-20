@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}" />
+  </head>
+  <body>
+    <form
+      class="form-group loginForm"
+      action="{% url 'signup-user' %}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+      <label class="up" for="">Username:</label>
+      {{form.username}}
+      <br />
+      <label class="up" for="">Email:</label>
+      {{form.email}}
+      <br />
+
+      <label class="up" for="">Password:</label>
+      {{form.password1}}
+      <br />
+
+      <label class="up" for="">Retype Password</label>
+      {{form.password2}}
+      <br />
+      <button class="btn login" type="submit">Signup</button>
+      <a
+        style="text-decoration: none"
+        class="btn login"
+        href="{% url 'login-user' %}"
+        type="button"
+        >Login</a
+      >
+    </form>
+  </body>
+  <script>
+    document.getElementById("id_password1").classList.add("up");
+    document.getElementById("id_password2").classList.add("up");
+  </script>
+</html>

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}" />
+  </head>
+  <body>
+    <form
+      class="form-group loginForm"
+      action="{% url 'login-user' %}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <h1 class="headLogin">Login:</h1>
+      {% csrf_token %}
+      <label class="up" for="">Name</label>
+      <input class="up" type="text" name="username" />
+      <label class="up" for="">Password</label>
+      <input class="up" type="password" name="password" />
+      <button class="btn login" type="submit">Login</button>
+      <p class="signupAsk">
+        Dont Have Any Account?
+        <a
+          style="color: aliceblue; text-decoration: none"
+          href="{% url 'signup-user' %}"
+          >Signup Here</a
+        >
+      </p>
+      <p class="signupAsk">
+        <a
+          style="color: aliceblue; text-decoration: none"
+          href="{% url 'game-page' %}"
+          >Back To The Game</a
+        >
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rules</title>
+
+    <style>
+      body {
+        font-family: "Press Start 2P", "Helvetica Neue";
+        color: #eee;
+        background-color: #222;
+        /* background-color: #60b347; */
+      }
+      .bth {
+        background-color: #e4e4e4;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rules</h1>
+
+    <h2>
+      User has to guess any random number between 1 to 20. System will show "Too
+      HIgh" if the guessed number is higher than correct number and "Too Low" if
+      the guessed number is lower than correct number. User can play multiple
+      times but the highscore will not be reset unless clicking on "Again!" The
+      goal is guessing the secret number as fast as possible
+    </h2>
+    <a href="{% url 'gtn-page' %}">
+      <button class="bth">Back to the Game</button></a
+    >
+  </body>
+</html>

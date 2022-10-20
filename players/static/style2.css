@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", "Helvetica Neue";
+  color: #eee;
+  background-color: #222;
+
+}
+
+
+
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
+  body > form{
+    padding: 300px 0px 0px 200px;
+  }
+
+  .up {
+
+    font-size: 2rem;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .headLogin{
+    margin-bottom: 60px;
+  }
+
+  .signupAsk{
+    margin-top: 30px;
+  }
+

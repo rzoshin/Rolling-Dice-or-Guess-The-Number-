@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game 2100</title>
+
+    <style>
+      body {
+        background-color: #181818;
+      }
+
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+      }
+      .game {
+        background-color: #e4e4e4;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      .head {
+        color: white;
+        font-family: inherit;
+      }
+      .game:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-center">
+        <a href="{% url 'gtn-page' %}"
+          ><button class="game" id="gtnid">Gusess The Game</button></a
+        >
+        <a href="{% url 'rd-page' %}"
+          ><button class="game" id="rdid">Rolling Dice</button></a
+        >
+        <p class="head">Press Any Button For Starting a Game</p>
+      </div>
+    </div>
+  </body>
+</html>
