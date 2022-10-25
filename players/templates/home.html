@@ -7,6 +7,41 @@
     <title>Game 2100</title>
 
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+      
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        height: 100vh;
+        color: #333;
+        background-image: linear-gradient(to top left, #30327bef 0%, #5887c4af 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* LAYOUT */
+      main {
+        position: relative;
+        width: 100rem;
+        height: 60rem;
+        background-color: rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(200px);
+        filter: blur();
+        box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+      }
       body {
         background-color: #181818;
       }
@@ -18,9 +53,15 @@
         left: 35%;
       }
       .game {
-        background-color: #e4e4e4;
+        background-color: #ffffff;
         border: none;
         color: black;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-weight: 300;
+        margin-bottom: 1rem;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -28,8 +69,10 @@
         font-size: 16px;
       }
       .head {
-        color: white;
-        font-family: inherit;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        font-weight: 200;
       }
       .game:hover {
         cursor: pointer;
@@ -37,16 +80,18 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="vertical-center">
-        <a href="{% url 'gtn-page' %}"
-          ><button class="game" id="gtnid">Guess The Game</button></a
-        >
-        <a href="{% url 'rd-page' %}"
-          ><button class="game" id="rdid">Rolling Dice</button></a
-        >
-        <p class="head">Press Any Button For Starting a Game</p>
+    <main>
+      <div class="container">
+        <div class="vertical-center">
+          <a href="{% url 'gtn-page' %}"
+            ><button class="game" id="gtnid">Guess The Game</button></a
+          >
+          <a href="{% url 'rd-page' %}"
+            ><button class="game" id="rdid">Rolling Dice</button></a
+          >
+          <p class="head">Press Any Button For Starting a Game</p>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
