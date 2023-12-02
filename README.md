@@ -10,7 +10,9 @@ Project title:
 
 Project Description:
 •	In this project, I made two games named “Guess The Number” and “Rolling Dice”, and combined them onto a single website. This is a user-based website i.e They can create accounts and then log in to the site. The rules of the game will also be mentioned in the respective gaming sites.
-•	I have used HTML, CSS, JS for the front-end part of the project. For the back-end part of the project, I have used SQLite and Django. I run the trial and error in the IDE Visual Studio Code in my x64 based Operating System laptop.
+
+•	I have used HTML, CSS, JS for the front-end part of the project. For the back-end part of the project, I have used SQLite and Django. I run the trial and error in the IDE Visual Studio Code in my x64 based Operating System laptop. This is also runnable on any MACOS device. In both the device cases, you have to have django installed.
+
 •	This project is a way to escape boredom and non-productive hours. People of any age group can play this game as the rules of the games are very simple. 
 
 How to use the project:
